@@ -1,0 +1,379 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Feedback</title>
+</head>
+<style>
+  	ul {
+        list-style-type: none;
+        margin: 0;
+        padding: 0;
+        overflow: hidden;
+        background-color: #333;
+      }
+
+    li {
+      float: left;
+    }
+
+    li a {
+      display: block;
+      color: white;
+      text-align: center;
+      padding: 24px 56px;
+      text-decoration: none;
+    }
+
+    li a:hover {
+      background-color: #111;
+    }
+    :root {
+      --penguin-size: 300px;
+      --penguin-skin: gray;
+      --penguin-belly: white;
+      --penguin-beak: orange;
+    }
+
+    @media (max-width: 350px) {
+      :root {
+        --penguin-size: 200px;
+        --penguin-skin: black;
+      }
+    }
+
+    .penguin {
+      position: relative;
+      margin: auto;
+      display: block;
+      margin-top: 5%;
+      width: var(--penguin-size, 300px);
+      height: var(--penguin-size, 300px);
+    }
+
+  .right-cheek {
+    top: 15%;
+    left: 35%;
+    background: var(--penguin-belly, white);
+    width: 60%;
+    height: 70%;
+    border-radius: 70% 70% 60% 60%;
+  }
+
+  .left-cheek {
+    top: 15%;
+    left: 5%;
+    background: var(--penguin-belly, white);
+    width: 60%;
+    height: 70%;
+    border-radius: 70% 70% 60% 60%;
+  }
+
+  .belly {
+    top: 60%;
+    left: 2.5%;
+    background: var(--penguin-belly, white);
+    width: 95%;
+    height: 100%;
+    border-radius: 120% 120% 100% 100%;
+  }
+
+  .penguin-top {
+    top: 10%;
+    left: 25%;
+    background: var(--penguin-skin, gray);
+    width: 50%;
+    height: 45%;
+    border-radius: 70% 70% 60% 60%;
+  }
+
+  .penguin-bottom {
+    top: 40%;
+    left: 23.5%;
+    background: var(--penguin-skin, gray);
+    width: 53%;
+    height: 45%;
+    border-radius: 70% 70% 100% 100%;
+  }
+
+  .right-hand {
+    top: 5%;
+    left: 25%;
+    background: var(--penguin-skin, black);
+    width: 30%;
+    height: 60%;
+    border-radius: 30% 30% 120% 30%;
+    transform: rotate(130deg);
+    z-index: -1;
+    animation-duration: 3s;
+    animation-name: wave;
+    animation-iteration-count: infinite;
+    transform-origin:0% 0%;
+    animation-timing-function: linear;
+  }
+
+  @keyframes wave {
+      10% {
+        transform: rotate(110deg);
+      }
+      20% {
+        transform: rotate(130deg);
+      }
+      30% {
+        transform: rotate(110deg);
+      }
+      40% {
+        transform: rotate(130deg);
+      }
+    }
+
+  .left-hand {
+    top: 0%;
+    left: 75%;
+    background: var(--penguin-skin, gray);
+    width: 30%;
+    height: 60%;
+    border-radius: 30% 30% 30% 120%;
+    transform: rotate(-45deg);
+    z-index: -1;
+  }
+
+  .right-feet {
+    top: 85%;
+    left: 60%;
+    background: var(--penguin-beak, orange);
+    width: 15%;
+    height: 30%;
+    border-radius: 50% 50% 50% 50%;
+    transform: rotate(-80deg);
+    z-index: -2222;
+  }
+
+  .left-feet {
+    top: 85%;
+    left: 25%;
+    background: var(--penguin-beak, orange);
+    width: 15%;
+    height: 30%;
+    border-radius: 50% 50% 50% 50%;
+    transform: rotate(80deg);
+    z-index: -2222;
+  }
+
+  .right-eye {
+    top: 45%;
+    left: 60%;
+    background: black;
+    width: 15%;
+    height: 17%;
+    border-radius: 50%;
+  }
+
+  .left-eye {
+    top: 45%;
+    left: 25%;
+    background: black;
+    width: 15%;
+    height: 17%;
+    border-radius: 50%;
+  }
+
+  .sparkle {
+    top: 25%;
+    left:-23%;
+    background: white;
+    width: 150%;
+    height: 100%;
+    border-radius: 50%;
+  }
+
+  .blush-right {
+    top: 65%;
+    left: 15%;
+    background: pink;
+    width: 15%;
+    height: 10%;
+    border-radius: 50%;
+  }
+
+  .blush-left {
+    top: 65%;
+    left: 70%;
+    background: pink;
+    width: 15%;
+    height: 10%;
+    border-radius: 50%;
+  }
+
+  .beak-top {
+    top: 60%;
+    left: 40%;
+    background: var(--penguin-beak, orange);
+    width: 20%;
+    height: 10%;
+    border-radius: 50%;
+  }
+
+  .beak-bottom {
+    top: 65%;
+    left: 42%;
+    background: var(--penguin-beak, orange);
+    width: 16%;
+    height: 10%;
+    border-radius: 50%;
+  }
+
+  body {
+    background:#c6faf1;
+  }
+
+  .penguin * {
+    position: absolute;
+  }
+
+  body {
+  background-image: url('https://cdn.pixabay.com/photo/2017/12/15/13/51/polynesia-3021072__480.jpg');
+  background-repeat: no-repeat;
+  background-attachment: fixed;  
+  background-size: cover;
+  }
+
+
+</style>
+
+<body>
+		<nav>
+	<ul>
+    <li><a class="active" href="Home.html">Home</a></li>
+    <li><a href="SignUp.html">SignUp</a></li>
+    <li><a href="Login_page.html">Login</a></li>
+    <li><a href="Introduction.html">Introduction</a></li>
+  	<li><a href="Beaches.html">Beaches</a></li>
+  	<li><a href="About.html">About</a></li>
+    <li><a href="Gallery.html">Gallery</a></li>
+    <li><a href="Feedback.html">Feedback</a></li>
+  </ul>
+  </nav>
+
+  <font size="10" color="black"><h1 align="center">Feedback</h1></font>
+
+  <div class="penguin">
+  <div class="penguin-bottom">
+    <div class="right-hand"></div>
+    <div class="left-hand"></div>
+    <div class="right-feet"></div>
+    <div class="left-feet"></div>
+  </div>
+  <div class="penguin-top">
+    <div class="right-cheek"></div>
+    <div class="left-cheek"></div>
+    <div class="belly"></div>
+    <div class="right-eye">
+      <div class="sparkle"></div>
+    </div>
+    <div class="left-eye">
+      <div class="sparkle"></div>
+    </div>
+    <div class="blush-right"></div>
+    <div class="blush-left"></div>
+    <div class="beak-top"></div>
+    <div class="beak-bottom"></div>
+  </div>
+</div>
+
+<div class="container">
+  <table align="center" border="2px" width="600" height="500" bgcolor="#6EEBBF">
+  <form action="Home.html" method="POST">
+    <tr><td><label for="fname">First Name</label>
+    <input type="text" id="fname" name="firstname" placeholder="Your name.."></td></tr>
+
+    <tr><td><label for="lname">Last Name</label>
+    <input type="text" id="lname" name="lastname" placeholder="Your last name.."></td></tr>
+
+    <tr><td><label for="email">E-mail</label>
+    <input type="text" id="email" name="email" placeholder="Your email address.."></td></tr>
+
+    <tr><td><label for="contact no">Contact number</label>
+    <input type="text" id="contact no" name="contact no" placeholder="Your contact number.."></td></tr>
+
+    <tr><td><label for="district">District</label>
+    <select id="district" name="district">
+      <option value>Badulla</option>
+      <option value>Monaragala</option>
+      <option value>Colombo</option>
+      <option value>Gampaha</option>
+      <option value>Kurunegala</option>
+      <option value>Puttalam</option>
+      <option value>Galle</option>
+      <option value>Matara</option>
+      <option value>Hambantota</option>
+      <option value>Ampara</option>
+      <option value>Batticaloa</option>
+      <option value>Trincomalee</option>
+      <option value>Kegalle</option>
+      <option value>Ratnapura</option>
+      <option value>Nuwara Eliya</option>
+      <option value>Kandy</option>
+      <option value>Matale</option>
+      <option value>Polonnaruwa</option>
+      <option value>Anuradhapura</option>
+      <option value>Kalutara</option>
+      <option value>Vavuniya</option>
+      <option value>Mullaitivu</option>
+      <option value>Mannar</option>
+      <option value>Kilinochchi</option>
+      <option value>Jaffna</option>
+       </select> </td></tr>
+   
+   
+    <tr><td><label for="subject">About this website: </label>
+    <textarea id="subject" name="subject" placeholder="Write something.." style="height:100px"></textarea></td></tr>
+
+    <tr><td align="center"><input type="Submit" name="Submit" value="Submit"></td></tr>
+    <tr><td align="center"><input type="Reset" name="Reset" value="Reset"></td></tr>
+  </form>
+</div>
+
+<br><br><br>
+
+<footer class="footer">
+  <table width="1300">
+      
+      <tr>
+      <td>   
+            <h3><u>Download our app</u></h3>
+            <p><a href="beautibeachinsl@gmail.com">E-mail : beautibeachinsl@gmail.com</a></p>
+              <img src="https://miro.medium.com/max/852/1*grpEUqlOJE6Fysw7ErWIBQ.jpeg" width="100" height="50">
+            
+          
+      </td>    
+      <td>   
+          
+            <h3><u>Useful links</u></h3>
+            <ul>
+              <li><a href="https://www.google.com/search?q=most+beautiful+beaches+in+sri+lanka&tbm=isch&ved=2ahUKEwiLk9nEuqD2AhX2XWwGHaVCAZsQ2-cCegQIABAA&oq=mostbeaches+in+sri+lanka&gs_lcp=CgNpbWcQARgAMgYIABAHEB46BwgjEO8DECc6BQgAEIAEOggIABAHEAUQHlDyBli-DmCKG2gAcAB4AIABlAGIAZEFkgEDMC41mAEAoAEBqgELZ3dzLXdpei1pbWfAAQE&sclient=img&ei=bLsbYoutBva7seMPpYWF2Ak&bih=625&biw=1366"><font color="White"><b>Photos</b></font></a></li>
+              <li><a href="https://www.google.com/maps/search/beaches+in+sri+lanka/@6.9307824,79.7222926,8z/data=!3m1!4b1?hl=en-GB"><font color="White"><b>Maps</b></font></a></li>
+            </ul>
+          
+      </td>
+      <td>
+          
+            <h3><u>Follow Us</u></h3>
+            <ul>
+              <li><img src="https://www.facebook.com/images/fb_icon_325x325.png" width="50" height="50"><font color="White"><b>Facebook</b></font></a></li>
+              <li><img src="https://cdn.pixabay.com/photo/2018/06/22/19/03/logo-3491390_960_720.png" width="50" height="50"><font color="White"><b>Twitter</b></font></a></li>
+              <li><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/5/58/Instagram-Icon.png/1025px-Instagram-Icon.png" width="50" height="50"><font color="White"><b>Instergram</b></font></a></li>
+              <li><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/0/09/YouTube_full-color_icon_%282017%29.svg/2560px-YouTube_full-color_icon_%282017%29.svg.png" width="50" height="50"><font color="White"><b>YouTube</b></font></a></li>
+            </ul>
+          
+      </td>
+    </tr>
+    </table>
+        
+        <hr>
+        <p class="copyright"><font color="Blue" size="12"><center>Beautiful Beaches in Sri Lanka</center></font></p>
+      
+</footer>
+
+</body>
+</html>

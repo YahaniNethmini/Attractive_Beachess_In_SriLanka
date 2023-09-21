@@ -1,0 +1,729 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<style>
+    body {
+  background-color: #42a1c6;
+}
+
+.fish {
+  width: 150px;
+  height: 100px;
+  animation: swim 3s infinite; 
+}
+
+.fish-body {
+  position: relative;
+  margin-top: 30px;
+  margin-left: 40px;
+  background-color: orange;
+  border-radius: 50%;
+  width: 150px; 
+  height: 100px;
+}
+
+.eye {
+  position: absolute;
+  margin-left: 100px;
+  margin-top: 20px;
+  z-index: 1;
+  background-color: white;
+  border-radius: 50%;
+  width: 20px;
+  height: 20px;
+}
+
+.pupil {
+  position: absolute;
+  z-index: 2;
+  margin-left: 5px;
+  margin-top: 5px;
+  background-color: black;
+  border-radius: 50%;
+  height: 10px;
+  width: 10px;
+}
+
+.fin {
+  margin-top: -100px; 
+  background-color: orange;
+  border-radius: 50%;
+  transform: rotate(40deg);
+  width: 80px;
+  height: 50px;
+}
+
+.fin-bottom {
+  margin-top: -10px;
+  transform: rotate(-40deg);
+}
+
+.bubbles {
+  position: fixed;
+  bottom: 0;
+  z-index: 5;
+  margin-right: 50px;
+  background-color: white;
+  border-radius: 50%;
+  opacity: .50;
+  width: 40px;
+  height: 40px;
+  animation: up 4s infinite;
+}
+
+.bubble-2 {
+  left: 350px;
+  animation: up 2s infinite;
+}
+
+.bubble-3 {
+  left: 750px;
+  opacity: .30;
+  animation: up 5s infinite;
+}
+
+.bubble-4 {
+  left: 1150px;
+  animation: up 6s infinite;
+}
+
+.bubble-5 {
+  left: 50px;
+  animation: up 5s infinite;
+}
+
+.bubble-6 {
+  left: 300px;
+  opacity: .30;
+  animation: up 3s infinite;
+}
+
+.bubble-7 {
+  left: 670px;
+  animation: up 4s infinite;
+}
+
+.bubble-8 {
+  left: 1050px;
+  opacity: .30;
+  animation: up 3s infinite;
+}
+
+@keyframes swim {
+  0% {
+    transform: translateY(-50px) translateX(0) rotate(30deg);
+  }
+  25% { 
+    transform: translateY(50px) translateX(250px) rotate(20deg);
+  }
+  50% {
+    transform: translateY(100px) translateX(500px);
+  }
+  75% {
+    transform: translateY(50px) translateX(850px) rotate(-20deg);
+  }
+  100% {
+    transform: translateY(-170px) translateX(1200px) rotate(-40deg);
+  }
+}
+
+@keyframes up {
+  100% {
+    transform: translateY(-800px);
+  }
+}
+    ul {
+      list-style-type: none;
+      margin: 0;
+      padding: 0;
+      overflow: hidden;
+      background-color: #333;
+    }
+
+    li {
+      float: left;
+    }
+
+    li a {
+      display: block;
+      color: white;
+      text-align: center;
+      padding: 24px 56px;
+      text-decoration: none;
+    }
+
+    li a:hover {
+      background-color: #111;
+    }
+
+    footer {
+    text-align: center;
+    padding: 10px;
+    background-color:#53FD64;
+
+  }
+  </style>
+<div class="fish">
+  <div class="fish-body">
+    <div class="eye">
+      <div class="pupil"></div>
+    </div>
+  </div>
+  <div class="fin"></div>
+  <div class="fin fin-bottom"></div>
+</div>
+
+<div class="bubbles bubble-1"></div>
+<div class="bubbles bubble-5"></div>
+<div class="bubbles bubble-2"></div>
+<div class="bubbles bubble-6"></div>
+<div class="bubbles bubble-3"></div>
+<div class="bubbles bubble-7"></div>
+<div class="bubbles bubble-4"></div>
+<div class="bubbles bubble-8"></div>
+
+
+	<title>Gallery</title>
+	
+</head>
+<br><br><br>
+<body bgcolor="#D6FF13">
+	<nav>
+	<ul>
+    <li><a class="active" href="Home.html">Home</a></li>
+    <li><a href="SignUp.html">SignUp</a></li>
+    <li><a href="Login_page.html">Login</a></li>
+    <li><a href="Introduction.html">Introduction</a></li>
+	  <li><a href="Beaches.html">Beaches</a></li>
+    <li><a href="About.html">About</a></li>
+		<li><a href="Gallery.html">Gallery</a></li>
+    <li><a href="Feedback.html">Feedback</a></li>
+  </ul>
+  </nav>
+
+ 
+
+    <br><br>
+
+    <table width="1500">
+      
+      <tr>
+        <td><a href="#Hiriketiya Beach">Hiriketiya Beach</a></td>
+        <td><a href="#Bentota Beach">Bentota Beach</a></td>
+        <td><a href="#Arugam Bay">Arugam Bay</a></td>
+      </tr>
+      <tr>
+        <td><a href="#Mirissa Beach">Mirissa Beach</a></td>
+        <td><a href="#Negambo Beach">Negambo Beach</a></td>
+        <td><a href="#Alankuda Beach">Alankuda Beach</a></td>
+      </tr>
+      <tr>
+        <td><a href="#Unawatuna Beach">Unawatuna Beach<</a></td>
+        <td><a href="#Weligama Beach">Weligama Beach</a></td>
+        <td><a href="#Nilaveli Beach">Nilaveli Beach</a></td>
+      </tr>
+      <tr>
+        <td><a href="#Mount Lavinia Beach">Mount Lavinia Beach</a></td>
+        <td><a href="#Kalpitiya Beach">Kalpitiya Beach</a></td>
+        <td><a href="#Beruwala Beach">Beruwala Beach</a></td>
+      </tr>
+      <tr>
+        <td><a href="#Thangalle Beach">Thangalle Beach</a></td>
+        <td><a href="#Dickwella Beach">Dickwella Beach</a></td>
+        <td><a href="#Hikkaduwa Beach">Hikkaduwa Beach</a></td>
+      </tr>
+      <tr>
+        <td><a href="#Koggala Beach">Koggala Beach</a></td>
+        <td><a href="#Pasikuda Beach">Pasikuda Beach</a></td>
+      </tr>
+    </ul>
+    </table>
+
+    <br><br><br><br><br>
+    
+    <section id="Hiriketiya Beach">
+  <font face="Bedrock"  color="#EB23A2" size="10"><div align="middle">HIRIKETIYA BEACH</font><br><br>
+    <table>
+      <tr>
+        <td align="center"><img width="300" height="auto" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTr3xy2R0F-jidQyUXsXKGIMZ5Vpwxdf69c8DBcm0pM_zZ4IkHagPocfDLseKj5fGJNlAs&usqp=CAU"></td>
+        <td align="center"><img width="300" height="auto" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTK7IzvrdaObk2SgDBu-UNVNB2j5dxfRuVgwgGDE6KSw_xLUNYkcuSzXiExD1D0hC16vcg&usqp=CAU"></td>
+        <td align="center"><img width="300" height="auto" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQZww2fCah5NYNvI5yjwDukLLiutHDT3Iq_U2SdkJ07aKcOKDsCnK94FYRyBo769wkrIMw&usqp=CAU"></td>
+        <td align="center"><img width="300" height="auto" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTo0dU3EPeXIPNI9XRCrRoRfZQ_YldJ81CYA93YVQCBF_MUlghBAvxIp0zLwCA9WRS9NoI&usqp=CAU"></td>
+        </tr>
+        <br>
+       <tr>
+        <td align="center"><img width="300" height="auto" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSrTb5jxSMstpGXI-xrPmWYyb61faX8566u3Mgfwcy9nY0ai1RcYSrgRS9zwilw6hKafIY&usqp=CAU"></td>
+        <td align="center"><img width="300" height="auto" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRFqNVz20oJs2q7Lu0wmcU2lR3rzP53f0g4BN6mZ5Fxj0NdrWhx1WnnSdYgsQaPJffFGMI&usqp=CAU"></td>
+        <td align="center"><img width="300" height="auto" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSjuqHqfcmvu_nNhJqz4y5EA1oT1nc6YuvgOw&usqp=CAU"></td>
+        <td align="center"><img width="300" height="auto" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQcoiBaKC9561ctTOOKSF5ZTVd4lxWtHQ6r8G1S5--FuHGbz1NKfMVlPy93u3OWgg4dCQs&usqp=CAU"></td>
+        </tr>
+        <br>
+       <tr>
+        <td align="center"><img width="300" height="auto" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS_70TkRPwzna4F5aHjKXSk0ub0B4B6WiftRA&usqp=CAU"></td>
+        <td align="center"><img width="300" height="auto" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQZJ_ACkl-h6VGsythVND7SrgMYYmr8r_F18GLywWQndNzKoJPf8uJ_iAQoIdPieFtRBqQ&usqp=CAU"></td>
+        <td align="center"><img width="300" height="auto" src="https://www.taruvillas.com/wp-content/uploads/2021/11/inner-banner_Mob_Hiriketiya-Bay-720x720-1-1.jpg"></td>
+        <td align="center"><img width="300" height="auto" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTMPiluAVaY4m-aHY2L1-UfWGzixx-Sl974Ww&usqp=CAU"></td>
+      </tr>
+    </table><br><br>
+  </section>
+
+  <section id="Bentota Beach">
+  <font face="Bedrock"  color="#EB23A2" size="10"><div align="middle">BENTOTA BEACH</font><br><br>
+    <table>
+      <tr>
+        <td align="center"><img width="300" height="auto" src="https://dynamic-media-cdn.tripadvisor.com/media/photo-o/10/4e/dc/bc/beach.jpg?w=1200&h=-1&s=1"></td>
+        <td align="center"><img width="300" height="auto" src="https://i.ytimg.com/vi/0TKI65NJBTM/hqdefault.jpg"></td>
+        <td align="center"><img width="300" height="auto" src="https://i.pinimg.com/originals/fc/bc/f1/fcbcf14248776e16be8e7c65cc0aacb0.jpg"></td>
+        <td align="center"><img width="300" height="auto" src="https://live.staticflickr.com/65535/50009234931_1a80fb78d1_n.jpg"></td>
+      </tr>
+      <br>
+       <tr>
+        <td align="center"><img width="300" height="auto" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ7qeYaHySfoP_5V_IQdvOS8wPsGNMuKymFI2xhLEwekXUraztPDzojsdVXCA_8DaodpdY&usqp=CAU"></td>
+        <td align="center"><img width="300" height="auto" src="https://www.thelocationguide.com/wp-content/uploads/2018/11/Bentota-Beach-e1541788500542.jpg"></td>
+        <td align="center"><img width="300" height="auto" src="https://i.pinimg.com/originals/fc/bc/f1/fcbcf14248776e16be8e7c65cc0aacb0.jpg"></td>
+        <td align="center"><img width="300" height="auto" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcScMSfje6bEeIfmCWE56noEturKJjGikLVZYSSMioATBx4cU5D0Q6aarGMSopGHhkBzw_U&usqp=CAU"></td>
+      </tr>
+      <br>
+       <tr>
+        <td align="center"><img width="300" height="auto" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT9_LX5vAFf98pWmQ4ZcfC8k1XsEUM8GgE8WDkHsCrnyFFOo4UJwVe9rB0BcU6yehCSJLk&usqp=CAU"></td>
+        <td align="center"><img width="300" height="auto" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcScKzjB9jpbJ_6KokpBCdQsfE43hPSO2urkT58YjUaZg3MjKFm0ASFWMW3qFhdA0U_y7oU&usqp=CAU"></td>
+        <td align="center"><img width="300" height="auto" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRcjyRO9cemDNqwDK2JGWEmUUY0QCsSrGZVZCvwb2q2NAcTAsBgbS9OTqKq2jpHCMFkZSs&usqp=CAU"></td>
+        <td align="center"><img width="300" height="auto" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSUv1qMo2naeCS0jZMKSLkOgq_P9o8o92nn2wd60uY9KXHG99k9juMFoIO3t-lB0B-5nic&usqp=CAU"></td>
+      </tr>
+    </table><br><br>
+  </section>
+
+  <section id="Arugam Bay">
+  <font face="Bedrock"  color="#EB23A2" size="10"><div align="middle">ARUGAM BAY</font><br><br>
+    <table>
+      <tr>
+        <td align="center"><img width="300" height="auto" src="https://wmimg.azureedge.net/public/img/marathons/arugambay-half-marathon/bDMIOD_arugambay-half-marathon.jpg?c=1627190988"></td>
+        <td align="center"><img width="300" height="auto" src="https://upload.wikimedia.org/wikipedia/commons/0/0c/Arugam_bay_beach.jpg"></td>
+        <td align="center"><img width="300" height="auto" src="https://d27k8xmh3cuzik.cloudfront.net/wp-content/uploads/2018/10/og76.jpg"></td>
+        <td align="center"><img width="300" height="auto" src="https://api.travelql.com/images/99f7bda5-680e-473c-9fe7-d7c3e391e8eb.webp"></td>
+      </tr>
+      <br>
+       <tr>
+        <td align="center"><img width="300" height="auto" src="https://i0.wp.com/www.mywavefinder.com/wp-content/uploads/2019/04/ArugamBay-@naturalelitephotography.jpg?resize=824%2C588&ssl=1"></td>
+        <td align="center"><img width="300" height="auto" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQLlbdFuMbJD56JQ7ehhBsMcHiQYVS97JJ_Gw&usqp=CAU"></td>
+        <td align="center"><img width="300" height="auto" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS7gVYwvFh8Wjv-4DvZdEGwxeyepNTlvC6N2aD7W5_HJcanV3ot2vU9E853AOcRPmhqFqk&usqp=CAU"></td>
+        <td align="center"><img width="300" height="auto" src="https://arugambaytraveller.com/wp-content/uploads/2017/06/Arugam-Bay-Traveller-Cover-Photo-web-920x518.jpg"></td>
+      </tr>
+      <br>
+       <tr>
+        <td align="center"><img width="300" height="auto" src="https://dynamic-media-cdn.tripadvisor.com/media/photo-o/1a/8d/38/51/caption.jpg?w=500&h=300&s=1"></td>
+        <td align="center"><img width="300" height="auto" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT2Lf5iRaykZKT3Sf4i5R5u6BweYs3L2IJyig&usqp=CAU"></td>
+        <td align="center"><img width="300" height="auto" src="https://monarahouse.com/wp-content/uploads/2017/08/arugam-bay-guide-things-to-do-elephant-rock.jpg"></td>
+        <td align="center"><img width="300" height="auto" src="https://i.ytimg.com/vi/M1laS8cSVdo/maxresdefault.jpg"></td>
+      </tr>
+    </table><br><br>
+  </section>
+
+  <section id="Mirissa Beach">
+  <font face="Bedrock"  color="#EB23A2" size="10"><div align="middle">MIRISSA BEACH</font><br><br>
+    <table>
+      <tr>
+        <td align="center"><img width="300" height="auto" src="https://images.squarespace-cdn.com/content/v1/596b2969d2b85786e6892853/1531738844396-H040L4I7S80ZGQV196K4/DJI_0780.jpg?format=1500w"></td>
+        <td align="center"><img width="300" height="auto" src="https://overatours.com/wp-content/uploads/2021/09/Secret-Beach-Mirissa-2-scaled-1.jpg"></td>
+        <td align="center"><img width="300" height="auto" src="https://thumbs.dreamstime.com/z/tropical-background-secret-beach-mirissa-sri-lanka-100834839.jpg"></td>
+        <td align="center"><img width="300" height="auto" src="https://thumbs.dreamstime.com/z/tropical-background-secret-beach-mirissa-sri-lanka-secret-beach-mirissa-sri-lanka-100835027.jpg"></td>
+      </tr>
+      <br>
+       <tr>
+        <td align="center"><img width="300" height="auto" src="https://justglobetrotting.com/wp-content/uploads/2017/04/P4070717-1-800x600.jpg"></td>
+        <td align="center"><img width="300" height="auto" src="https://previews.123rf.com/images/boggy22/boggy221608/boggy22160800683/61310246-mirissa-sri-lanka-january-24-2014-unidentified-tourists-at-mirissa-beach-in-sri-lanka-mirissa-beach-.jpg"></td>
+        <td align="center"><img width="300" height="auto" src="https://img.traveltriangle.com/blog/wp-content/uploads/2019/06/Mirissa-cover_24th-Mar.jpg"></td>
+        <td align="center"><img width="300" height="auto" src="https://lp-cms-production.imgix.net/2021-03/Mirissa_beach_Sri_Lanka.jpg"></td>
+      </tr>
+      <br>
+       <tr>
+        <td align="center"><img width="300" height="auto" src="https://st.depositphotos.com/1083798/1395/i/950/depositphotos_13950552-stock-photo-mirissa-beach-sri-lanka.jpg"></td>
+        <td align="center"><img width="300" height="auto" src="https://live.staticflickr.com/1916/44107563944_25c810a56e_b.jpg"></td>
+        <td align="center"><img width="300" height="auto" src="https://justglobetrotting.com/wp-content/uploads/2017/04/FullSizeRender-3-898x600.jpg"></td>
+        <td align="center"><img width="300" height="auto" src="https://uploads-ssl.webflow.com/576fd5a8f192527e50a4b95c/5ea8524ff5ced809eb2e71d9_things%20to%20do%20in%20mirissa.jpg"></td>
+      </tr>
+    </table><br><br>
+  </section>
+  
+  <section id="Negambo Beach">
+  <font face="Bedrock"  color="#EB23A2" size="10"><div align="middle">NEGAMBO BEACH</font><br><br>
+    <table>
+      <tr>
+        <td align="center"><img width="300" height="auto" src="https://www.storyofsrilanka.com/images/sri-lanka-guide/negombo-beach/01.jpg"></td>
+        <td align="center"><img width="300" height="auto" src="https://1001beach.com/img/posts/2086/1200/negombo-1.jpg"></td>
+        <td align="center"><img width="300" height="auto" src="https://media.audleytravel.com/-/media/images/home/indian-subcontinent/sri-lanka/places/istock_517872815_negombo_beach_800x2400.jpg?q=79&w=1920&h=640"></td>
+        <td align="center"><img width="300" height="auto" src="https://media-cdn.tripadvisor.com/media/photo-s/0e/4e/8f/f4/dsc-0077-largejpg.jpg"></td>
+      </tr>
+      <br>
+       <tr>
+        <td align="center"><img width="300" height="auto" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTHZqB2_9x-tTF-TfWmatbiTkW_QkNXfCaECTHneqzgFKL-uB8T2q8sZVSJ9WlCs9i8mDM&usqp=CAU"></td>
+        <td align="center"><img width="300" height="auto" src="https://www.storyofsrilanka.com/images/sri-lanka-guide/negombo-beach/01.jpg"></td>
+        <td align="center"><img width="300" height="auto" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR0W2QIuZ_VyKN2SkjmU3NHCKgUboI396c79d2Yu10R0P6d5_Xh-4mgTO0lYG2EIbGWQ_g&usqp=CAU"></td>
+        <td align="center"><img width="300" height="auto" src="https://www.bestoflanka.com/images/best-things-to-do-in-sri-lanka/beach-destinations-sri-lanka/beach-negombo-sri-lanka/thumb/03.jpg"></td>
+      </tr>
+      <br>
+       <tr>
+        <td align="center"><img width="300" height="auto" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRr6fV-fYInwuklp6nuuUIzD8e97zinjayftA&usqp=CAU"></td>
+        <td align="center"><img width="300" height="auto" src="https://margaritakiteschool.com/wp-content/uploads/2020/05/negombo-kite-spot-sri-lanka.jpg"></td>
+        <td align="center"><img width="300" height="auto" src="https://previews.123rf.com/images/takepicsforfun/takepicsforfun1711/takepicsforfun171100037/91244266-view-of-negombo-beach-in-negombo-sri-lanka.jpg"></td>
+        <td align="center"><img width="300" height="auto" src="https://youimg1.tripcdn.com/target/10041f000001gp8mq0530.jpg?proc=source%2Ftrip"></td>
+      </tr>
+    </table><br><br>
+  </section>
+
+  <section id="Alankuda Beach">
+  <font face="Bedrock"  color="#EB23A2" size="10"><div align="middle">ALANKUDA BEACH</font><br><br>
+    <table>
+      <tr>
+        <td align="center"><img width="300" height="auto" src="https://www.attractionsinsrilanka.com/wp-content/uploads/2020/06/Alankuda-Beach.jpg"></td>
+        <td align="center"><img width="300" height="auto" src="https://media-cdn.tripadvisor.com/media/photo-s/0a/8b/d3/f4/dolphin-beach-resort.jpg"></td>
+        <td align="center"><img width="300" height="auto" src="https://www.attractionsinsrilanka.com/wp-content/uploads/2020/06/Alankuda-Beach-1.jpg"></td>
+        <td align="center"><img width="300" height="auto" src="http://exploresrilanka.lk/wp-content/uploads/2019/07/2-3.jpg"></td>
+      </tr>
+      <br>
+       <tr>
+        <td align="center"><img width="300" height="auto" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSXn6jZpMJbsaX8DNaJ1LAWnxS2boSECWi9rTQ_4v3ODZ9Xsd902p6Dt9dGSusQB-y2uyk&usqp=CAU"></td>
+        <td align="center"><img width="300" height="auto" src="https://1001beach.com/img/posts/2078/1200/alankuda-2.jpg"></td>
+        <td align="center"><img width="300" height="auto" src="https://images.trvl-media.com/hotels/16000000/15670000/15669500/15669451/66a2c19f.jpg?impolicy=fcrop&w=670&h=385&p=1&q=medium"></td>
+        <td align="center"><img width="300" height="auto" src="https://q-xx.bstatic.com/xdata/images/hotel/max750/110036232.jpg?k=984cf2dfbc9ecf58d7a7ee95705cbdf2227ec015d8c737f66305d159834e828a&o="></td>
+      </tr>
+      <br>
+       <tr>
+        <td align="center"><img width="300" height="auto" src="https://cf.bstatic.com/xdata/images/hotel/max500/335503760.jpg?k=86ccb09ee2fa78acbfab2dfa4953f51b3f2692c25224efceec65efdb9e854daa&o=&hp=1"></td>
+        <td align="center"><img width="300" height="auto" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTHOZ8kJbnd7AWHzphDxL3VicToH6cAlRgghA&usqp=CAU"></td>
+        <td align="center"><img width="300" height="auto" src="https://img.ev.mu/images/hotels/231430/600x400/543081.jpg"></td>
+        <td align="center"><img width="300" height="auto" src="https://media-cdn.tripadvisor.com/media/photo-s/01/55/99/ce/swinmming-pool.jpg"></td>
+      </tr>
+    </table><br><br>
+  </section>
+
+  <section id="Unawatuna Beach">
+  <font face="Bedrock"  color="#EB23A2" size="10"><div align="middle">UNAWATUNA BEACH</font><br><br>
+    <table>
+      <tr>
+        <td align="center"><img width="300" height="auto" src="https://media.istockphoto.com/photos/tropical-beach-in-sri-lanka-picture-id498615566?k=20&m=498615566&s=612x612&w=0&h=ZOBPS4fUtCApIfTCgUVu4Zduh2M95ikn9wG0WhVFHtQ="></td>
+        <td align="center"><img width="300" height="auto" src="https://c4.wallpaperflare.com/wallpaper/162/439/588/sri-lanka-beach-seashore-photography-wallpaper-preview.jpg"></td>
+        <td align="center"><img width="300" height="auto" src="https://cache.desktopnexus.com/thumbseg/1810/1810023-bigthumbnail.jpg"></td>
+        <td align="center"><img width="300" height="auto" src="https://img.traveltriangle.com/blog/wp-content/uploads/2019/04/Unawatuna-cover_31st-Mar.jpg"></td>
+      </tr>
+      <br>
+       <tr>
+        <td align="center"><img width="300" height="auto" src="https://image.shutterstock.com/image-photo/aerial-beach-view-unawatuna-sri-260nw-1281093694.jpg"></td>
+        <td align="center"><img width="300" height="auto" src="https://youimg1.tripcdn.com/target/100h1f000001grudr20A1_C_750_420.jpg_.webp?proc=source%2Ftrip"></td>
+        <td align="center"><img width="300" height="auto" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRYGdRZtoES3lQMeMCTtBraa43Gz6VV02FzC5CffFrfej3V6QW8LfXNM_YmdM1W9H50lIo&usqp=CAU"></td>
+        <td align="center"><img width="300" height="auto" src="https://1001beach.com/img/posts/2071/1200/unawatuna-1.jpg"></td>
+      </tr>
+      <br>
+       <tr>
+        <td align="center"><img width="300" height="auto" src="https://i.pinimg.com/474x/b0/6e/d4/b06ed4d97818b13bb71a8e725b71d775--travel-box-asia-travel.jpg"></td>
+        <td align="center"><img width="300" height="auto" src="https://exp.cdn-hotels.com/hotels/6000000/5970000/5963200/5963134/4a7ba2d7_z.jpg?impolicy=fcrop&w=500&h=333&q=medium"></td>
+        <td align="center"><img width="300" height="auto" src="https://cocobayunawatuna.com//wp-content/uploads/2018/10/Layer-55.png"></td>
+        <td align="center"><img width="300" height="auto" src="https://uploads-ssl.webflow.com/576fd5a8f192527e50a4b95c/5ea80556f4e5e66fd47b14a8_things%20to%20do%20in%20unawatuna.jpg"></td>
+      </tr>
+    </table><br><br>
+  </section>
+
+  <section id="Weligama Beach">
+  <font face="Bedrock"  color="#EB23A2" size="10"><div align="middle">WELIGAMA BEACH</font><br><br>
+    <table>
+      <tr>
+        <td align="center"><img width="300" height="auto" src="https://upload.wikimedia.org/wikipedia/commons/d/da/Weligama_Beach_in_Sri_Lanka.jpg"></td>
+        <td align="center"><img width="300" height="auto" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRtCSj1ju7v1BV-V3BQNDS8Og5kIaS2El0ure6wQEKHN-AXZ7LPqqvrbB7ZskNo-2kedkw&usqp=CAU"></td>
+        <td align="center"><img width="300" height="auto" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQbHx9gpwZR-KMEG11-ANmgoX90neZpmQlGoLUwVhUTGyPTNA6PPEv0uLl6RFh-FicRsU4&usqp=CAU"></td>
+        <td align="center"><img width="300" height="auto" src="https://lavingotravels.com/wp-content/uploads/2016/02/weligama.jpg"></td>
+      </tr>
+      <br>
+       <tr>
+        <td align="center"><img width="300" height="auto" src="https://1001beach.com/img/posts/2083/1200/weligama-1.jpg"></td>
+        <td align="center"><img width="300" height="auto" src="https://exp.cdn-hotels.com/hotels/12000000/11480000/11470100/11470023/f09fe9e4_z.jpg?impolicy=fcrop&w=500&h=333&q=medium"></td>
+        <td align="center"><img width="300" height="auto" src="https://static.wixstatic.com/media/e00d8e_81c107f9f84f48feae633e973636d346~mv2.jpg/v1/fill/w_1000,h_667,al_c,q_90,usm_0.66_1.00_0.01/e00d8e_81c107f9f84f48feae633e973636d346~mv2.jpg"></td>
+        <td align="center"><img width="300" height="auto" src="https://www.ketaturebeachhouse.com/wp-content/uploads/2018/01/Ketature-Beach-Sri-Lanka-Cape-Weligama-View.jpg"></td>
+      </tr>
+      <br>
+       <tr>
+        <td align="center"><img width="300" height="auto" src="https://dynamic-media-cdn.tripadvisor.com/media/photo-o/08/f4/70/b7/surfdiscovery-sri-lanka.jpg?w=700&h=-1&s=1"></td>
+        <td align="center"><img width="300" height="auto" src="https://image.shutterstock.com/image-photo/aerial-weligama-sri-lanka-260nw-1282230763.jpg"></td>
+        <td align="center"><img width="300" height="auto" src="https://www.attractionsinsrilanka.com/wp-content/uploads/2020/02/Weligama-Beach.jpg"></td>
+        <td align="center"><img width="300" height="auto" src="https://duqjpivknq39s.cloudfront.net/2018/12/Mob2.jpg"></td>
+      </tr>
+    </table><br><br>
+  </section>
+
+  <section id="Nilaveli Beach">
+  <font face="Bedrock"  color="#EB23A2" size="10"><div align="middle">NILAVELI BEACH</font><br><br>
+    <table>
+      <tr>
+        <td align="center"><img width="300" height="auto" src="https://1001beach.com/img/posts/2125/1200/nilaveli-1.jpg"></td>
+        <td align="center"><img width="300" height="auto" src="http://creativeminds.lk/demo/directory/wp-content/uploads/2018/10/3-1.png"></td>
+        <td align="center"><img width="300" height="auto" src="https://gate20.files.wordpress.com/2012/10/nilaveli-beach-trincamalee-sri-lanka-1.jpg"></td>
+        <td align="center"><img width="300" height="auto" src="https://media-cdn.tripadvisor.com/media/photo-s/16/56/45/b5/nilaweli-beach-srilanka.jpg"></td>
+      </tr>
+      <br>
+       <tr>
+        <td align="center"><img width="300" height="auto" src="https://previews.123rf.com/images/knet2d/knet2d1303/knet2d130300018/18302921-nilaveli-beach-trincomalee-sri-lanka.jpg"></td>
+        <td align="center"><img width="300" height="auto" src="http://www.lankainoratravel.com/assets/img/main/inora_travel_lanka_Nilaveli/inora-travel-lanka-nilaveli-beach.jpg"></td>
+        <td align="center"><img width="300" height="auto" src="https://www.news.lk/media/k2/items/cache/b292b668b51cb8c9a98c649f6a341b0e_XL.jpg"></td>
+        <td align="center"><img width="300" height="auto" src="https://lp-cms-production.imgix.net/2019-06/5429dd3be1b4bf54860d0a3dbc02ca66-pigeon-island-national-park.jpg"></td>
+      </tr>
+      <br>
+       <tr>
+        <td align="center"><img width="300" height="auto" src="https://dynamic-media-cdn.tripadvisor.com/media/photo-o/1b/07/91/87/nilaveli-beach-resort.jpg?w=900&h=600&s=1"></td>
+        <td align="center"><img width="300" height="auto" src="https://c8.alamy.com/comp/BXM7KC/paradise-rediscovered-nilaveli-beach-trincomalee-sri-lanka-east-coast-BXM7KC.jpg"></td>
+        <td align="center"><img width="300" height="auto" src="https://www.attractionsinsrilanka.com/wp-content/uploads/2019/10/Nilaveli-Beach-1.jpg"></td>
+        <td align="center"><img width="300" height="auto" src="https://media-cdn.tripadvisor.com/media/photo-s/13/5b/bb/57/beach-bbq-dinning.jpg"></td>
+      </tr>
+    </table><br><br>
+  </section>
+
+    <section id="Mount Lavinia Beach">
+  <font face="Bedrock"  color="#EB23A2" size="10"><div align="middle">MOUNT LAVINIA BEACH</font><br><br>
+    <center>
+    <table>
+      <tr>
+        <td align="center"><img width="300" height="auto" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQiaY6UxnX_EhDmiA6KDRC9xXWLwPcSYNrXwyy24H8UmiKx-5T3GMQKU1oo5006kNW701k&usqp=CAU"></td>
+        
+        <td align="center"><img width="300" height="auto" src="https://www.lakpura.com/images/LK94009782-05-E.JPG"></td>
+        <td align="center"><img width="300" height="auto" src="https://media.timeout.com/images/105269038/image.jpg"></td>
+      </tr>
+      <br>
+       <tr>
+        
+        <td align="center"><img width="300" height="auto" src="https://image.shutterstock.com/image-photo/mt-lavinia-sri-lanka-january-260nw-1628670439.jpg"></td>
+        <td align="center"><img width="300" height="auto" src="https://ak-d.tripcdn.com/images/220o0g0000007y37f0801_Z_550_412_R5_Q70_D.jpg"></td>
+        <td align="center"><img width="300" height="auto" src="https://www.mountlaviniahotel.com/wp-content/uploads/2013/04/IMG_0092.jpg"></td>
+      </tr>
+      <br>
+       <tr>
+        <td align="center"><img width="300" height="auto" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSAsfTt4rHE8ElPyEE6LkHriU8zC1VlNPPk5A&usqp=CAU"></td>
+        <td align="center"><img width="300" height="auto" src="https://content.r9cdn.net/rimg/dimg/87/46/2d3a15bb-city-46318-16a45ad1215.jpg?crop=true&width=1366&height=768&xhint=2434&yhint=1307"></td>
+        <td align="center"><img width="300" height="auto" src="https://pix10.agoda.net/hotelImages/44543/-1/8186d1484853b65b557da2aec520800c.jpg?s=1024x768"></td>
+        
+      </tr>
+    </table></center><br><br>
+  </section>
+
+  <section id="Kalpitiya Beach">
+  <font face="Bedrock"  color="#EB23A2" size="10"><div align="middle">KALPITIYA BEACH</font><br><br>
+    <table>
+      <tr>
+        <td align="center"><img width="300" height="auto" src="https://img.traveltriangle.com/blog/wp-content/uploads/2019/01/Kalpitiya-Beach.jpg"></td>
+        <td align="center"><img width="300" height="auto" src="https://www.bestoflanka.com/images/best-things-to-do-in-sri-lanka/beach-destinations-sri-lanka/beach-kalpitiya-sri-lanka/thumb/01.jpg"></td>
+        <td align="center"><img width="300" height="auto" src="https://img.traveltriangle.com/blog/wp-content/uploads/2019/01/Kalpitiya-Beach-ABOUT.jpg"></td>
+        <td align="center"><img width="300" height="auto" src="https://1001beach.com/img/posts/2081/1200/kalpitiya-1.jpg"></td>
+      </tr>
+      <br>
+       <tr>
+        <td align="center"><img width="300" height="auto" src="https://img.traveltriangle.com/blog/wp-content/tr:w-700,h-400/uploads/2019/01/Kalpitiya-Beach-BEST-TIME-TO-VISIT.jpg"></td>
+        <td align="center"><img width="300" height="auto" src="https://dynamic-media-cdn.tripadvisor.com/media/photo-o/18/23/d9/ca/nearly-1600-km-os-beaches.jpg?w=700&h=-1&s=1"></td>
+        <td align="center"><img width="300" height="auto" src="https://www.bestoflanka.com/images/best-things-to-do-in-sri-lanka/beach-destinations-sri-lanka/beach-kalpitiya-sri-lanka/thumb/05.jpg"></td>
+        <td align="center"><img width="300" height="auto" src="https://img.traveltriangle.com/blog/wp-content/tr:w-700,h-400/uploads/2019/01/Kalpitiya-Beach-ABOUT.jpg"></td>
+      </tr>
+      <br>
+       <tr>
+        <td align="center"><img width="300" height="auto" src="https://surfsouthsrilanka.com/wp-content/uploads/2017/11/Kalatpia-Lagoon-Kite-Surf-Sri-Lanka.jpg"></td>
+        <td align="center"><img width="300" height="auto" src="https://dynamic-media-cdn.tripadvisor.com/media/photo-o/13/f9/4f/1f/kudawa-beach.jpg?w=1200&h=1200&s=1"></td>
+        <td align="center"><img width="300" height="auto" src="https://cf.bstatic.com/xdata/images/city/1020x340/976056.jpg?k=5a05d951fb4bce0acd55e1df47b8578ece94881c074e20dcbb8a7d99d504fec6&o="></td>
+        <td align="center"><img width="300" height="auto" src="https://www.srilankatravelandtourism.com/places-sri-lanka/kalpitiya/kalpitiya-images/kalpitiya-6-sri-lanka.jpg"></td>
+      </tr>
+    </table><br><br>
+  </section>
+
+  <section id="Beruwala Beach">
+  <font face="Bedrock"  color="#EB23A2" size="10"><div align="middle">BERUWALA BEACH</font><br><br>
+    <table>
+      <tr>
+        <td align="center"><img width="300" height="auto" src="https://1001beach.com/img/posts/2091/1200/beruwala-1.jpg"></td>
+        <td align="center"><img width="300" height="auto" src="https://media-cdn.tripadvisor.com/media/photo-s/0b/da/10/5a/photo8jpg.jpg"></td>
+        <td align="center"><img width="300" height="auto" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQGtyMl7BULQGkRqx4w6xlMzvA_WTxw2uAvxC6ScayTbX6up7OxzsmufoQVrJJRrTNY4TU&usqp=CAU"></td>
+        <td align="center"><img width="300" height="auto" src="https://media-cdn.tripadvisor.com/media/photo-s/1b/d5/49/5d/der-privatstrand-direkt.jpg"></td>
+      </tr>
+       <tr>
+        <td align="center"><img width="300" height="auto" src="https://media-cdn.tripadvisor.com/media/photo-s/10/aa/0e/9d/beruwala-beach.jpg"></td>
+        <td align="center"><img width="300" height="auto" src="https://image.shutterstock.com/image-photo/sri-lanka-ocean-beruwala-beach-260nw-1608906397.jpg"></td>
+        <td align="center"><img width="300" height="auto" src="https://live.staticflickr.com/6228/6245374193_1c1ec4efbd_z.jpg"></td>
+        <td align="center"><img width="300" height="auto" src="https://cdn.sunspottours.com/contents/images/resorts/galleries/41/beruwala-beach.jpg"></td>
+      </tr>
+       <tr>
+        <td align="center"><img width="300" height="auto" src="http://www.mysrilankaholidays.com/gallery/beruwala-2.jpg"></td>
+        <td align="center"><img width="300" height="auto" src="https://media-cdn.tripadvisor.com/media/photo-s/0b/da/10/5a/photo8jpg.jpg"></td>
+        <td align="center"><img width="300" height="auto" src="https://live.staticflickr.com/3313/5743535224_6c6210a6e8_b.jpg"></td>
+        <td align="center"><img width="300" height="auto" src="https://www.img.urlaub-sr-lanka.info/2018/04/unawatuna.jpg"></td>
+      </tr>
+    </table><br><br>
+  </section>
+
+  <section id="Thangalle Beach">
+  <font face="Bedrock"  color="#EB23A2" size="10"><div align="middle">THANGALLE BEACH</font><br><br>
+    <table>
+      <tr>
+        <td align="center"><img width="300" height="auto" src="https://i0.wp.com/gotravelyourworld.com/wp-content/uploads/2019/01/tangallesilentbeach.jpg"></td>
+        <td align="center"><img width="300" height="auto" src="https://youimg1.tripcdn.com/target/0100x1200082cv2nbB73F.jpg?proc=source%2Ftrip"></td>
+        <td align="center"><img width="300" height="auto" src="https://static.toiimg.com/photo/msid-52989689,width-96,height-65.cms"></td>
+        <td align="center"><img width="300" height="auto" src="https://thenational-the-national-prod.cdn.arcpublishing.com/resizer/XDD-ixaQqxe6ucuKFlQrqTEp39k=/1440x810/filters:format(jpg):quality(70)/cloudfront-eu-central-1.images.arcpublishing.com/thenational/YKTXF7EU7YKJQEQJGGW26OIMAA.jpg"></td>
+      </tr>
+      <br>
+       <tr>
+        <td align="center"><img width="300" height="auto" src="https://i1.wp.com/gotravelyourworld.com/wp-content/uploads/2019/01/tangallegoyambokka.jpg?resize=1024%2C768&ssl=1"></td>
+        <td align="center"><img width="300" height="auto" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTAeK43x5_sXKFLSnKHIukKao-hf1sHDVbKgQ&usqp=CAU"></td>
+        <td align="center"><img width="300" height="auto" src="https://nerdnomads.com/wp-content/uploads/2014/03/DSC3444.jpg"></td>
+        <td align="center"><img width="300" height="auto" src="https://media.audleytravel.com/-/media/images/home/indian-subcontinent/sri-lanka/places/istock133833587_tangalle_800x2400.jpg?q=79&w=1920&h=640"></td>
+      </tr>
+      <br>
+       <tr>
+        <td align="center"><img width="300" height="auto" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQt4Z4LD6eKCK_14jJVJlj9EZ3_lX-PeqZlGsIgGnwbSunVBK7r9hg6MF7eXwbwJaMvJNs&usqp=CAU"></td>
+        <td align="center"><img width="300" height="auto" src="https://pix10.agoda.net/hotelImages/433022/-1/663e31f5820b3798a57eb7c5098fea89.png?ca=8&ce=1&s=1024x768"></td>
+        <td align="center"><img width="300" height="auto" src="https://img.traveltriangle.com/blog/wp-content/uploads/2019/01/shutterstock_197235497.jpg"></td>
+        <td align="center"><img width="300" height="auto" src="https://afar-production.imgix.net/uploads/images/post_images/images/NvbtcA7Xtt/original_ce53705bb3761faddfce9a2103663aad.jpg?1466196732?ixlib=rails-0.3.0&auto=format%2Ccompress&crop=entropy&fit=crop&h=719&q=80&w=954"></td>
+      </tr>
+    </table><br><br>
+  </section>
+
+  <section id="Dickwella Beach">
+  <font face="Bedrock"  color="#EB23A2" size="10"><div align="middle">DICKWELLA BEACH</font><br><br>
+    <table>
+      <tr>
+        <td align="center"><img width="300" height="auto" src="https://img.traveltriangle.com/blog/wp-content/uploads/2018/12/Cover-for-Dickwella-Beach.jpg"></td>
+        <td align="center"><img width="300" height="auto" src="https://www.charlotteplansatrip.com/wp-content/uploads/2019/12/Silent-Beach-1070x713.jpg"></td>
+        <td align="center"><img width="300" height="auto" src="https://cf.bstatic.com/xdata/images/hotel/max1280x900/177283269.jpg?k=d5b77cfabfc9990c065e4d1e1a8caa4b97e7d9d58c00bc529a4004643260ff8a&o=&hp=1"></td>
+        <td align="center"><img width="300" height="auto" src="https://dynamic-media-cdn.tripadvisor.com/media/photo-o/1b/6d/a7/29/dickwella-resort-spa.jpg?w=900&h=-1&s=1"></td>
+      </tr>
+      <br>
+       <tr>
+        <td align="center"><img width="300" height="auto" src="https://1001beach.com/img/posts/2073/1200/dickwella-1.jpg"></td>
+        <td align="center"><img width="300" height="auto" src="https://img.traveltriangle.com/blog/wp-content/tr:w-700,h-400/uploads/2018/12/Best-Time-To-Visit-Dickwella-Beach.jpg"></td>
+        <td align="center"><img width="300" height="auto" src="https://media-cdn.tripadvisor.com/media/photo-s/00/1c/37/44/the-beach.jpg"></td>
+        <td align="center"><img width="300" height="auto" src="https://i.pinimg.com/originals/e7/8c/a5/e78ca5447d0220cf8b9e2d579a817460.jpg"></td>
+      </tr>
+      <br>
+       <tr>
+        <td align="center"><img width="300" height="auto" src="https://mediaim.expedia.com/destination/2/cf1f145bc243434f31101eb203756402.jpg"></td>
+        <td align="center"><img width="300" height="auto" src="https://www.likesrilanka.com/wp-content/uploads/2020/08/Dickwella-Resort-Spa-7.jpg"></td>
+        <td align="center"><img width="300" height="auto" src="https://duqjpivknq39s.cloudfront.net/2019/03/800x750-59.jpg"></td>
+        <td align="center"><img width="300" height="auto" src="https://thesurfatlas.com/wp-content/uploads/2020/04/Dickwella-Surf.jpg"></td>
+      </tr>
+    </table><br><br>
+  </section>
+
+  <section id="Hikkaduwa Beach">
+  <font face="Bedrock"  color="#EB23A2" size="10"><div align="middle">HIKKADUWA BEACH</font><br><br>
+    <table>
+      <tr>
+        <td align="center"><img width="300" height="auto" src="https://www.orangesmile.com/extreme/img/w600/hikkaduwa-beach_1.jpg"></td>
+        <td align="center"><img width="300" height="auto" src="https://www.srilankatravelandtourism.com/places-sri-lanka/hikkaduwa/hikkaduwa-images/hikkaduwa-5-sri-lanka.jpg"></td>
+        <td align="center"><img width="300" height="auto" src="https://dynamic-media-cdn.tripadvisor.com/media/photo-o/09/ee/0a/71/photo8jpg.jpg?w=700&h=500&s=1"></td>
+        <td align="center"><img width="300" height="auto" src="https://theplanetd.com/images/hikkaduwa-sri-lanka-beach.jpg"></td>
+      </tr>
+      <br>
+       <tr>
+        <td align="center"><img width="300" height="auto" src="https://image.shutterstock.com/image-photo/aerial-hikkaduwa-beach-sri-lanka-260nw-1286004031.jpg"></td>
+        <td align="center"><img width="300" height="auto" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQXsQfMUJDVeABK5taurCCjYu2D6Ua5tH3ZrQ&usqp=CAU"></td>
+        <td align="center"><img width="300" height="auto" src="https://img.traveltriangle.com/blog/wp-content/tr:w-700,h-400/uploads/2018/09/Narigama-Beach.jpg"></td>
+        <td align="center"><img width="300" height="auto" src="https://www.worldbeachguide.com/photos/hikkaduwa-beach.jpg"></td>
+      </tr>
+      <br>
+       <tr>
+        <td align="center"><img width="300" height="auto" src="https://deepintosrilanka.com/wp-content/uploads/2019/11/Hikkaduwa2.jpeg"></td>
+        <td align="center"><img width="300" height="auto" src="https://pix10.agoda.net/city/262/262-7x3.jpg?s=1920x"></td>
+        <td align="center"><img width="300" height="auto" src="https://media-cdn.tripadvisor.com/media/photo-s/06/cb/d9/94/hikkaduwa-beach.jpg"></td>
+        <td align="center"><img width="300" height="auto" src="https://h8r3x6j3.rocketcdn.me/wp-content/uploads/2020/01/hikkaduwa-coast.jpg"></td>
+      </tr>
+    </table><br><br>
+  </section>
+
+  <section id="Koggala Beach">
+  <font face="Bedrock"  color="#EB23A2" size="10"><div align="middle">KOGGALA BEACH</font><br><br>
+    <table>
+     <tr>
+        <td align="center"><img width="300" height="auto" src="https://res.cloudinary.com/thrillophilia/image/upload/c_fill,f_auto,fl_progressive.strip_profile,g_auto,h_600,q_auto,w_auto/v1/filestore/3tb847bwmsor7yin1f5b733chvig_1580293311_shutterstock_1503294719.jpg"></td>
+        <td align="center"><img width="300" height="auto" src="https://pix10.agoda.net/hotelImages/285/285606/285606_15071718400032537258.jpg?s=1024x768"></td>
+        <td align="center"><img width="300" height="auto" src="https://negombotourservice.com/wp-content/uploads/2020/06/koggala-beach-04-1.jpg"></td>
+        <td align="center"><img width="300" height="auto" src="https://i.pinimg.com/736x/59/40/f6/5940f6fdbc3929a885729c621e8dd316.jpg"></td>
+      </tr>
+      <br>
+       <tr>
+        <td align="center"><img width="300" height="auto" src="https://previews.123rf.com/images/tagstiles/tagstiles1802/tagstiles180200051/96865875-koggala-beach-sri-lanka-asia-a-wide-view-across-the-bay-of-koggala-beach.jpg"></td>
+        <td align="center"><img width="300" height="auto" src="https://c8.alamy.com/comp/C3ET0X/koggala-beach-south-coast-sri-lanka-C3ET0X.jpg"></td>
+        <td align="center"><img width="300" height="auto" src="https://1001beach.com/img/posts/2075/1200/koggala-1.jpg"></td>
+        <td align="center"><img width="300" height="auto" src="https://cf.bstatic.com/xdata/images/hotel/max1280x900/62959871.jpg?k=393f5b8411ad322dbb6591dc11f1fa18ae78983405b6a3f13949b08991535182&o=&hp=1"></td>
+      </tr>
+      <br>
+       <tr>
+        <td align="center"><img width="300" height="auto" src="https://media.istockphoto.com/photos/ocean-beach-at-the-morning-picture-id519276262?k=20&m=519276262&s=612x612&w=0&h=d6BWFKW4gaVRXJEFXaPAlTGlpNpv6_4cfdivg-JO0Go="></td>
+        <td align="center"><img width="300" height="auto" src="http://www.mysrilankaholidays.com/gallery/koggala-1.jpg"></td>
+        <td align="center"><img width="300" height="auto" src="https://i.pinimg.com/originals/f2/3f/5d/f23f5d6bbe985b06d20ff7ca98dcbede.jpg"></td>
+        <td align="center"><img width="300" height="auto" src="https://www.koggalabeachhotel.com/wp-content/uploads/sites/4/2019/02/koggala_beach_hotel_banner_4.jpg"></td>
+      </tr>
+    </table><br><br>
+  </section>
+
+  <section id="Pasikuda Beach">
+  <font face="Bedrock"  color="#EB23A2" size="10"><div align="middle">PASIKUDA BEACH</font><br><br>
+    <table>
+      <tr>
+        <td align="center"><img width="300" height="auto" src="https://www.news.lk/media/k2/items/cache/cbe6864b3d740d30f083e306d933f3a5_XL.jpg"></td>
+        <td align="center"><img width="300" height="auto" src="https://image.shutterstock.com/image-photo/stunning-drone-view-pasikuda-beach-260nw-1801861585.jpg"></td>
+        <td align="center"><img width="300" height="auto" src="https://www.bestoflanka.com/images/best-things-to-do-in-sri-lanka/beach-destinations-sri-lanka/beach-pasikuda-sri-lanka/thumb/03.jpg"></td>
+        <td align="center"><img width="300" height="auto" src="https://i1.wp.com/srilankatravelbuddy.com/wp-content/uploads/2018/10/Pasikuda-Beach2.jpg?fit=640%2C479&ssl=1"></td>
+      </tr>
+      <br>
+       <tr>
+        <td align="center"><img width="300" height="auto" src="https://duqjpivknq39s.cloudfront.net/2019/01/800x750-11.jpg"></td>
+        <td align="center"><img width="300" height="auto" src="https://i.pinimg.com/originals/c7/8b/54/c78b549bba635757fb77140cc228b7b4.jpg"></td>
+        <td align="center"><img width="300" height="auto" src="https://upload.wikimedia.org/wikipedia/commons/1/11/Pasikudah_beach.JPG"></td>
+        <td align="center"><img width="300" height="auto" src="https://pix10.agoda.net/geo/city/512859/1_512859_02.jpg?s=1920x822"></td>
+      </tr>
+      <br>
+       <tr>
+        <td align="center"><img width="300" height="auto" src="https://www.lovesrilanka.org/wp-content/uploads/2020/04/Pasikuda-Bay-800.jpg"></td>
+        <td align="center"><img width="300" height="auto" src="https://duqjpivknq39s.cloudfront.net/2019/03/800x750_1.jpg"></td>
+        <td align="center"><img width="300" height="auto" src="https://www.ugaescapes.com/wp-content/uploads/2017/06/800x750-header-mobile-2.jpg"></td>
+        <td align="center"><img width="300" height="auto" src="https://www.attractionsinsrilanka.com/wp-content/uploads/2019/11/Pasikuda-Beach.jpg"></td>
+      </tr>
+    </table><br><br>
+  </section>
+
+    <a href="#top">Go to the Top</a>
+
+    <br><br><br>
+  
+<footer class="footer">
+  <table width="1300">
+      
+      <tr>
+      <td>   
+            <h3><u>Download our app</u></h3>
+            <p><a href="beautibeachinsl@gmail.com">E-mail : beautibeachinsl@gmail.com</a></p>
+              <img src="https://miro.medium.com/max/852/1*grpEUqlOJE6Fysw7ErWIBQ.jpeg" width="100" height="50">
+            
+          
+      </td>    
+      <td>   
+          
+            <h3><u>Useful links</u></h3>
+            <ul>
+              <li><a href="https://www.google.com/search?q=most+beautiful+beaches+in+sri+lanka&tbm=isch&ved=2ahUKEwiLk9nEuqD2AhX2XWwGHaVCAZsQ2-cCegQIABAA&oq=mostbeaches+in+sri+lanka&gs_lcp=CgNpbWcQARgAMgYIABAHEB46BwgjEO8DECc6BQgAEIAEOggIABAHEAUQHlDyBli-DmCKG2gAcAB4AIABlAGIAZEFkgEDMC41mAEAoAEBqgELZ3dzLXdpei1pbWfAAQE&sclient=img&ei=bLsbYoutBva7seMPpYWF2Ak&bih=625&biw=1366"><font color="White"><b>Photos</b></font></a></li>
+              <li><a href="https://www.google.com/maps/search/beaches+in+sri+lanka/@6.9307824,79.7222926,8z/data=!3m1!4b1?hl=en-GB"><font color="White"><b>Maps</b></font></a></li>
+            </ul>
+          
+      </td>
+      <td>
+          
+            <h3><u>Follow Us</u></h3>
+            <ul>
+              <li><img src="https://www.facebook.com/images/fb_icon_325x325.png" width="50" height="50"><font color="White"><b>Facebook</b></font></a></li>
+              <li><img src="https://cdn.pixabay.com/photo/2018/06/22/19/03/logo-3491390_960_720.png" width="50" height="50"><font color="White"><b>Twitter</b></font></a></li>
+              <li><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/5/58/Instagram-Icon.png/1025px-Instagram-Icon.png" width="50" height="50"><font color="White"><b>Instergram</b></font></a></li>
+              <li><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/0/09/YouTube_full-color_icon_%282017%29.svg/2560px-YouTube_full-color_icon_%282017%29.svg.png" width="50" height="50"><font color="White"><b>YouTube</b></font></a></li>
+            </ul>
+          
+      </td>
+    </tr>
+    </table>
+        
+        <hr>
+        <p class="copyright"><font color="Blue" size="12"><center>Beautiful Beaches in Sri Lanka</center></font></p>
+      
+</footer>
+
+</body>
+</html>
